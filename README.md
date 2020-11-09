@@ -49,7 +49,7 @@ or
 
 ## Wiki
 
-[Tutorial how to get your private TOKEN for the bot] https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token
+[Tutorial how to get your private TOKEN for chat bot] https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token
 
 [Pretrained models](https://github.com/vlomme/Multi-Tacotron-Voice-Cloning/wiki/Pretrained-models)
 
