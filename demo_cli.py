@@ -6,6 +6,7 @@ from vocoder import inference as vocoder
 from pathlib import Path
 import numpy as np
 import librosa
+import soundfile as sf
 import argparse
 import torch
 import sys
@@ -35,13 +36,17 @@ if __name__ == '__main__':
                         help="Text") 
     parser.add_argument("-p", "--path_wav", type=Path, 
                         default="ex.wav",
-                        help="wav file")                           
+                        help="wav file")
+
+    parser.add_argument("-p2", "--path2_wav", type=Path,
+                        default='outputs\demo_output.wav',
+                        help='wav file')
+
     args = parser.parse_args()
     print_args(args, parser)
     if not args.no_sound:
         import sounddevice as sd
-        
-    
+
     ## Print some environment information (for debugging purposes)
     print("Running a test of your configuration...\n")
     if not torch.cuda.is_available():
@@ -179,10 +184,14 @@ if __name__ == '__main__':
         sd.play(generated_wav, synthesizer.sample_rate)
         
     # Save it on the disk
-    fpath = "demo_output_%02d.wav" % num_generated
+    #fpath = "demo_output_%02d.wav" % num_generated #original
+
+    fpath = args.path2_wav # I don't need to save all the outputs, because I use telegram
     print(generated_wav.dtype)
-    librosa.output.write_wav(fpath, generated_wav.astype(np.float32), 
-                             synthesizer.sample_rate)
+
+                             
+    sf.write(fpath, generated_wav.astype(np.float32), samplerate = synthesizer.sample_rate)
+                             
     num_generated += 1
     print("\nSaved output as %s\n\n" % fpath)
     
