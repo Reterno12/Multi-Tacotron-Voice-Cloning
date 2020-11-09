@@ -22,7 +22,7 @@ default_text = "Hello my friends. Я многоязычный синтез по�
 
 def generate_TTP(voice_id = "ex", text = default_text ):
 
-    path_demo = 'C:\Docs\Companies\SDAML(NSU)\Test_task\\baseline\Multi-Tacotron-Voice-Cloning-Telegram-bot\demo_cli.py'
+    path_demo = 'demo_cli.py'
     output_path = "output\{}.wav".format(voice_id)
 
     subprocess.run( 'python {} -p "input\{}.wav" -p2 "{}" -t "{}" --no_sound'.format(path_demo,
