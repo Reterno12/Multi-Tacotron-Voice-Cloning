@@ -1,4 +1,4 @@
-# Multi-Tacotron Voice Cloning 
+# Multi-Tacotron Voice Cloning Telegram Bot
 This repository is a phonemic multilingual (Russian-English) implementation based on [Multi-Tacotron-Voice-Cloning](https://github.com/vlomme/Multi-Tacotron-Voice-Cloning). It's  a telegram bot that used toolbox from original project to clone (Russian-English) speach and make TTS.
 
 ### [Example](https://soundcloud.com/fn5va3vghrkh/sets/multi-tacotron)
