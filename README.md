@@ -1,23 +1,21 @@
 # Multi-Tacotron Voice Cloning 
-This repository is a phonemic multilingual (Russian-English) implementation based on [Real-Time-Voice-Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning). it is a four-stage deep learning framework that allows to create a numerical representation of a voice from a few seconds of audio, and to use it to condition a text-to-speech model. If you only need the English version, please use the [original implementation](https://github.com/CorentinJ/Real-Time-Voice-Cloning).
-
-Этот репозиторий является многоязычной(русско-английской) фонемной реализацией, основанной на [Real-Time-Voice-Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning). Она состоит из четырёх нейронных сетей, которые позволяют создавать числовое представление голоса из нескольких секунд звука и использовать его для создания модели преобразования текста в речь
+This repository is a phonemic multilingual (Russian-English) implementation based on [Multi-Tacotron-Voice-Cloning](https://github.com/vlomme/Multi-Tacotron-Voice-Cloning). It's  a telegram bot that used toolbox from original project to clone (Russian-English) speach and make TTS.
 
 ### [Example](https://soundcloud.com/fn5va3vghrkh/sets/multi-tacotron)
 
-## Quick start
-Use the [colab online demo](https://colab.research.google.com/github/vlomme/Multi-Tacotron-Voice-Cloning/blob/master/Multi_Tacotron_Voice_Cloning.ipynb)
-
 ### Requirements
-You will need the following whether you plan to use the toolbox only or to retrain the models.
+You will need the following whether you plan to use the bot, the toolbox only or to retrain the models.
 
-**≥Python 3.6**.
+**Python3.7≥ version of python ≥Python 3.6**.
 
 [PyTorch](https://pytorch.org/get-started/locally/) (>=1.0.1).
 
 Run `pip install -r requirements.txt` to install the necessary packages.
 
-A GPU is mandatory, but you don't necessarily need a high tier GPU if you only want to use the toolbox.
+If you plan to use bot.py, you will  need to create new bot with @botfarther and get your private TOKEN for it.
+I put a link to the tutorial in **wiki** section below.
+
+A GPU is mandatory, but you don't necessarily need a high tier GPU if you only want to use the bot or toolbox.
 
 ### Pretrained models
 Download the latest [here](https://drive.google.com/uc?id=1aQBmpflbX_ePUdXTSNE4CfEL9hdG2-O8).
@@ -35,6 +33,11 @@ Download the latest [here](https://drive.google.com/uc?id=1aQBmpflbX_ePUdXTSNE4C
 | Mozilla | Ru | [link](https://voice.mozilla.org/ru/datasets) | 50 speaker, 30h good speech | [link](https://drive.google.com/open?id=1Mf4EGQUhlz6nmeky8qQTYFedmW0DNzjV) | Перекодировал в 16кГц, Раскидал разных пользователей по папкам |
 | Russian Single | Ru | [link](https://www.kaggle.com/bryanpark/russian-single-speaker-speech-dataset) | One speaker, 9h good speech | [link](https://drive.google.com/open?id=1ycdLrB_k2GRVePGiuNSbq30TB1_JlpNg) | Перекодировал в 16кГц |
 
+## Bot
+You can then try the bot 
+`python bot.py`
+
+
 
 ### Toolbox
 You can then try the toolbox:
@@ -45,14 +48,14 @@ or
 
 
 ## Wiki
+
+[Tutorial how to get your private TOKEN for the bot] https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token
+
 [Pretrained models](https://github.com/vlomme/Multi-Tacotron-Voice-Cloning/wiki/Pretrained-models)
 
 [Тренировка (и для других языков)](https://github.com/vlomme/Multi-Tacotron-Voice-Cloning/wiki/%D0%A2%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-(%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2))
 
 [Training (and for other languages)](https://github.com/vlomme/Multi-Tacotron-Voice-Cloning/wiki/Training-(and-for-other-languages))
-
-## Contribution
-for any questions, please [email me](niw9102@gmail.com)
 
 ### Papers implemented  
 | URL | Designation | Title | Implementation source |
