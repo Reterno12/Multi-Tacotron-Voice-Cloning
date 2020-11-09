@@ -13,7 +13,7 @@ You will need the following whether you plan to use the bot, the toolbox only or
 Run `pip install -r requirements.txt` to install the necessary packages.
 
 If you plan to use bot.py, you will  need to create new bot with @botfarther and get your private TOKEN for it.
-I put a link to the tutorial in **wiki** section below.
+I put a link to the tutorial in the **wiki** section below.
 
 A GPU is mandatory, but you don't necessarily need a high tier GPU if you only want to use the bot or toolbox.
 
