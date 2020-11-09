@@ -16,7 +16,7 @@ class DBHelper:
         self.conn.commit()
 
     def add_voice(self, chat_id, voice_id):
-        # if there is no user yet, create new:
+        # if there is no user yet, create a new one:
         stmt = "SELECT voice_id FROM voices WHERE chat_id = (?)"
         check = [ x[0] for x in self.conn.execute(stmt,(chat_id,))]
 
