@@ -3,7 +3,7 @@ import os
 
 class DBHelper:
 
-    # take database name and creates database connection
+    # take database name and create database connection
     def __init__(self, dbname='voice.sqlite'):
         self.dbname = dbname
         self.conn = sqlite3.connect(dbname, check_same_thread=False)
